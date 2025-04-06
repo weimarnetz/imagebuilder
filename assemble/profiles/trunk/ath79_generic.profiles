@@ -1,0 +1,59 @@
+avm_fritz4020
+avm_fritz300e
+dlink_dir-859-a1;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+embeddedwireless_dorin
+glinet_gl-ar150
+glinet_gl-ar300m-lite
+glinet_gl-x750;-kmod-ath10k-ct -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
+iodata_etg3-r
+iodata_wn-ag300dgr
+joyit_jt-or750i;-kmod-ath10k-ct -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
+librerouter_librerouter-v1
+openmesh_om5p-ac-v2;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+tplink_archer-a7-v5;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+tplink_archer-c2-v3;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
+tplink_archer-c25-v1;-kmod-ath10k-ct-smallbuffers kmod-ath10k-smallbuffers -ath10k-firmware-qca9887-ct ath10k-firmware-qca9887
+tplink_archer-c5-v1;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+tplink_archer-c58-v1;-kmod-ath10k-ct-smallbuffers kmod-ath10k-smallbuffers -ath10k-firmware-qca9888-ct ath10k-firmware-qca9888
+tplink_archer-c6-v2;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca9888-ct ath10k-firmware-qca9888
+tplink_archer-c60-v1;-kmod-ath10k-ct-smallbuffers kmod-ath10k-smallbuffers -ath10k-firmware-qca9888-ct ath10k-firmware-qca9888
+tplink_archer-c60-v2;-kmod-ath10k-ct-smallbuffers kmod-ath10k-smallbuffers -ath10k-firmware-qca9888-ct ath10k-firmware-qca9888
+tplink_archer-c60-v3;-kmod-ath10k-ct-smallbuffers kmod-ath10k-smallbuffers -ath10k-firmware-qca9888-ct ath10k-firmware-qca9888
+tplink_archer-c7-v1
+tplink_archer-c7-v2;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca988x-ct ath10k-firmware-qca988x
+tplink_archer-c7-v5;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca988x-ct ath10k-firmware-qca988x
+tplink_archer-d50-v1;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+tplink_cpe210-v1
+tplink_cpe210-v2
+tplink_cpe210-v3
+tplink_cpe220-v2
+tplink_cpe220-v3
+tplink_cpe510-v1
+tplink_cpe510-v2
+tplink_cpe510-v3
+tplink_eap225-outdoor-v1;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca9888-ct ath10k-firmware-qca9888
+tplink_eap225-outdoor-v3;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca9888-ct ath10k-firmware-qca9888
+tplink_eap225-v3;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca9888-ct ath10k-firmware-qca9888
+tplink_re350k-v1;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+tplink_re450-v2;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x -iperf -tcpdump-mini
+tplink_tl-wdr3500-v1
+tplink_tl-wdr3600-v1
+tplink_tl-wdr4300-v1
+tplink_tl-wdr4300-v1-il
+tplink_tl-wr1043n-v5
+tplink_tl-wr1043nd-v2
+tplink_tl-wr1043nd-v3
+tplink_tl-wr1043nd-v4
+ubnt_lap-120
+ubnt_nanobeam-ac;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+ubnt_nanostation-ac;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+ubnt_nanostation-ac-loco;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+ubnt_rocket-m
+ubnt_routerstation
+ubnt_routerstation-pro
+ubnt_unifi
+ubnt_unifiac-lr;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+ubnt_unifiac-lite;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+ubnt_unifiac-mesh;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca988x-ct ath10k-firmware-qca988x
+ubnt_unifiac-mesh-pro;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
+xiaomi_mi-router-4q

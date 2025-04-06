@@ -1,0 +1,48 @@
+-kmod-ppp
+-ppp
+-ppp-mod-pppoe
+-wpad-mini
+-wpad 
+-firewall
+-opkg
+-wpad-basic
+hostapd-mini
+#kmod-sched-cake
+kmod-ipt-nat
+kmod-ipt-conntrack
+hostapd-mini
+iptables-mod-ipopt
+dnsmasq
+rpcd-mod-iwinfo
+rpcd
+iw
+#tc
+-odhcpd-ipv6only
+-odhcp6c
+-kmod-usb-core 
+-kmod-usb-ehci 
+-kmod-usb-ledtrig-usbport
+-kmod-usb2
+
+# GUI-basics
+uhttpd
+uhttpd-mod-ubus
+
+# OLSR
+olsrd
+olsrd-mod-arprefresh
+olsrd-mod-jsoninfo
+olsrd-mod-txtinfo
+olsrd-mod-nameservice
+olsrd-mod-watchdog
+olsrd-mod-dyn-gw
+
+# VPN
+fastd 
+resolveip
+freifunk-common
+
+# Weimarnetz
+weimarnetz-ffwizard
+weimarnetz-basic-website
+weimarnetz-owm-exporter
