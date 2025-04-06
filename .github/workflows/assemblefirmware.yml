@@ -6,6 +6,8 @@ name: Weimarnetz Firmware Assembly
 # events but only for the master branch
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [package_update]
   push:
     branches: [ main ]
     paths:
