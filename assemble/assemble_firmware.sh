@@ -13,30 +13,18 @@
 
 set -e
 
+# Source common functions library
+LIB_DIR="$(dirname "$0")/lib"
+source "$LIB_DIR/common_functions.sh"
+
 IB_DIR="$(dirname "$0")/ib/"
 PROFILES=""
 TARGET=
 PKGLIST_DIR="$(dirname "$0")/packagelists"
+PACKAGES_URL="https://builds.weimarnetz.de/brauhaus/packages"
 DEST_DIR=
 USECASES=
 OPENWRT=
-
-info() {
-	echo "$@"
-}
-
-signal_handler() {
-	# only remove directory when not in debug mode
-	if [ -z "$DEBUG" ] ; then
-		rm -Rf "$TEMP_DIR"
-	else
-		info "Not removing temp dir $TEMP_DIR"
-	fi
-}
-
-error() {
-	echo "$@" >&2
-}
 
 # DEST_DIR needs to be an absolute path, otherwise it got broken
 # because the imagebuilder is two levels deeper.
@@ -58,6 +46,35 @@ parse_pkg_list_file() {
 	pkg_file="$1"
 
 	grep -v '^\#' $pkg_file | tr -t '\n' ' '
+}
+
+fetch_package_json() {
+  local json_url="$1"
+  local json_file="$TEMP_DIR/package_build.json"
+  
+  # Only fetch if we haven't already
+  if [ ! -f "$json_file" ]; then
+    mkdir -p "$TEMP_DIR"
+    if ! curl -L -s -f -o "$json_file" "$json_url"; then
+      error "Failed to fetch JSON from $json_url"
+      error "Curl output: $(cat curl_log.txt)"
+      exit 1
+    fi
+  fi
+  
+  echo "$json_file"
+}
+
+get_json_value() {
+  local json_file="$1"
+  local key="$2"
+  
+  if [ -f "$json_file" ]; then
+    # Use jq to extract the value
+    jq -r ".$key // empty" "$json_file" 2>/dev/null
+  else
+    return 1
+  fi
 }
 
 usage() {
@@ -126,18 +143,21 @@ if [ -z "$TARGET" ] ; then
 	exit 1
 fi
 
-
-trap signal_handler 0 1 2 3 15
+# Setup cleanup on exit
+trap cleanup 0 1 2 3 15
 
 # get main- and subtarget name from TARGET
 MAINTARGET="$(echo $TARGET|cut -d '_' -f 1)"
 CUSTOMTARGET="$(echo $TARGET|cut -d '_' -f 2)"
 SUBTARGET="$(echo $CUSTOMTARGET|cut -d '-' -f 1)"
 MAINVERSION="$(echo $OPENWRT|cut -d '.' -f1-2)" # extract 22.03 from 22.03.5
+# Setup JSON URL and try to fetch package_build.json
+JSON_URL="$PACKAGES_URL/${MAINTARGET}_${CUSTOMTARGET}/weimarnetz_packages/package_build.json"
+JSON_FILE=$(fetch_package_json "$JSON_URL")
 
 if [ -z "$DEST_DIR" ]; then
-  GIT=$(git describe --always --dirty --tags)
-  DEST_DIR=$(dirname "$0")/firmwares/$GIT/$OPENWRT/$MAINTARGET/$CUSTOMTARGET
+  PACKAGE_VERSION=$(get_json_value "$JSON_FILE" "version")  
+  DEST_DIR=$(dirname "$0")/firmwares/$PACKAGE_VERSION/$OPENWRT/$MAINTARGET/$CUSTOMTARGET
 fi
 echo $DEST_DIR
 # sanitize dest_dir
@@ -218,7 +238,7 @@ while read model; do
     	base_target_dir=$(basename ${package_list})
 		mkdir -p "${DEST_DIR}/${base_target_dir}"
     cd "firmwares"
-    ln -sf ${GIT} current
+    ln -sf ${PACKAGE_VERSION} current
     cd ..
 
 		make -C "${IB_DIR}/" image "PROFILE=$profile" "PACKAGES=$packages" "BIN_DIR=${DEST_DIR}/${base_target_dir}" $img_params || failed_profiles="${profile}; ${failed_profiles}" 
