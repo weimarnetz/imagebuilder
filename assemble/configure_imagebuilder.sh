@@ -130,7 +130,7 @@ MAINTARGET="$(echo $TARGET|cut -d '_' -f 1)"
 CUSTOMTARGET="$(echo $TARGET|cut -d '_' -f 2)"
 SUBTARGET="$(echo $CUSTOMTARGET|cut -d '-' -f 1)"
 EXTENSION="zst"
-if [[ "$OPENWRT" == 23* ]]; then
+if [[ "$OPENWRT" == 22* || "$OPENWRT" == 23* ]]; then
   EXTENSION="xz"
 fi
 # Setup JSON URL and try to fetch package_build.json
