@@ -149,6 +149,9 @@ elif [ "$EXTENSION" = "zst" ]; then
   tar --use-compress-program=unzstd -xf "$TEMP_DIR/ib.tar.zst" --strip-components=1 -C "$TEMP_DIR/ib"
 fi
 
+mkdir -p ./EMBEDDED_FILES/etc/opkg/keys
+mkdir -p ./ib/keys
+
 echo "src/gz weimarnetz $PACKAGES_URL/${MAINTARGET}_${CUSTOMTARGET}/weimarnetz_packages" >> $TEMP_DIR/ib/repositories.conf 
 echo "src/gz freifunk $PACKAGES_URL/${MAINTARGET}_${CUSTOMTARGET}/freifunk_packages" >> $TEMP_DIR/ib/repositories.conf 
 
@@ -157,9 +160,7 @@ echo "src/gz freifunk $PACKAGES_URL/${MAINTARGET}_${CUSTOMTARGET}/freifunk_packa
 
 cp -r $TEMP_DIR/ib ./
 
-mkdir -p ./ib/keys
 cat keys/key-build.pub > "./ib/keys/$(./ib/staging_dir/host/bin/usign -F -p keys/key-build.pub)"
-mkdir -p ./EMBEDDED_FILES/etc/opkg/keys
 cp "./ib/keys/$(./ib/staging_dir/host/bin/usign -F -p keys/key-build.pub)" ./EMBEDDED_FILES/etc/opkg/keys/
 echo "WEIMARNETZ_PACKAGES_DESCRIPTION=$(get_json_value "$JSON_FILE" "version")" > ./EMBEDDED_FILES/etc/weimarnetz_release
 echo "WEIMARNETZ_PACKAGES_BRANCH=$(get_json_value "$JSON_FILE" "branch")" >> ./EMBEDDED_FILES/etc/weimarnetz_release
