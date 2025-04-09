@@ -1,6 +1,4 @@
 8dev_carambola2
-avm_fritz4020
-avm_fritz300e
 aruba_ap-105
 buffalo_bhr-4grv
 buffalo_bhr-4grv2
@@ -14,22 +12,10 @@ dlink_dir-825-b1
 dlink_dir-825-c1
 dlink_dir-835-a1
 dlink_dir-859-a1;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-elecom_wrc-1750ghbk2-i;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-elecom_wrc-300ghbk2-i
-embeddedwireless_dorin
-engenius_ecb1750;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-engenius_epg5000;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-engenius_ews511ap;-kmod-ath10k-ct -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
 glinet_gl-ar150
 glinet_gl-ar300m-lite
 glinet_gl-x750;-kmod-ath10k-ct -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
-iodata_etg3-r
-iodata_wn-ac1167dgr;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-iodata_wn-ac1600dgr;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-iodata_wn-ac1600dgr2;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-iodata_wn-ag300dgr
 joyit_jt-or750i;-kmod-ath10k-ct -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
-librerouter_librerouter-v1
 nec_wg1200cr;-kmod-ath10k-ct -ath10k-firmware-qca9888-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9888
 nec_wg800hp;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
 netgear_ex6400
@@ -37,9 +23,6 @@ netgear_ex7300
 netgear_wndr3700
 netgear_wndr3700v2
 netgear_wndr3800
-ocedo_koala;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-ocedo_raccoon
-ocedo_ursus
 openmesh_om5p-ac-v2;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
 phicomm_k2t
 pisen_wmm003n
@@ -60,12 +43,10 @@ tplink_archer-c7-v1
 tplink_archer-c7-v2;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca988x-ct ath10k-firmware-qca988x
 tplink_archer-c7-v5;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca988x-ct ath10k-firmware-qca988x
 tplink_archer-d50-v1;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-tplink_cpe210-v1
 tplink_cpe210-v2
 tplink_cpe210-v3
 tplink_cpe220-v2
 tplink_cpe220-v3
-tplink_cpe510-v1
 tplink_cpe510-v2
 tplink_cpe510-v3
 tplink_eap225-outdoor-v1;-kmod-ath10k-ct kmod-ath10k-smallbuffers -ath10k-firmware-qca9888-ct ath10k-firmware-qca9888
@@ -78,7 +59,6 @@ tplink_tl-wdr3600-v1
 tplink_tl-wdr4300-v1
 tplink_tl-wdr4300-v1-il
 tplink_tl-wdr4900-v2
-tplink_tl-wr1043n-v5
 tplink_tl-wr1043nd-v1
 tplink_tl-wr1043nd-v2
 tplink_tl-wr1043nd-v3
@@ -87,23 +67,8 @@ tplink_tl-wr2543-v1
 tplink_tl-wr710n-v1
 tplink_tl-wr810n-v1
 tplink_tl-wr810n-v2
-tplink_tl-wr841-v8-16m;-wpad-basic -wpad -wpad-mini -wpad-mesh-wolfssl hostapd-mini
-tplink_tl-wr841-v8-8m;-wpad-basic -wpad -wpad-mini -wpad-mesh-wolfssl hostapd-mini
-tplink_tl-wr842n-v3
-tplink_tl-wr842n-v2
-ubnt_airrouter
-ubnt_bullet-m-ar7240
-ubnt_bullet-m-ar7241
-ubnt_bullet-m-xw
 ubnt_lap-120
 ubnt_nanobeam-ac;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-ubnt_nanostation-ac;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-ubnt_nanostation-ac-loco;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-ubnt_nanostation-loco-m
-ubnt_nanostation-loco-m-xw
-ubnt_nanostation-m
-ubnt_nanostation-m-xw
-ubnt_rocket-m
 ubnt_routerstation
 ubnt_routerstation-pro
 ubnt_unifi
@@ -114,17 +79,11 @@ ubnt_unifiac-mesh-pro;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-sm
 ubnt_acb-isp
 wd_mynet-n750
 wd_mynet-wifi-rangeextender
-winchannel_wb2000
 xiaomi_mi-router-4q
-yuncore_a770;-kmod-ath10k-ct -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
-yuncore_a782;-kmod-ath10k-ct -ath10k-firmware-qca9888-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9888
-yuncore_xd4200
-zbtlink_zbt-wd323
 devolo_dvl1200e
 devolo_dvl1200i
 devolo_dvl1750c
 devolo_dvl1750e
 devolo_dvl1750i
 devolo_dvl1750x
-etactica_eg200
 jjplus_ja76pf2

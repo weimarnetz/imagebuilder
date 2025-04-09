@@ -1,52 +1,24 @@
 8dev_carambola2
-avm_fritz4020
-avm_fritz300e
 aruba_ap-105
 buffalo_bhr-4grv
 buffalo_bhr-4grv2
 buffalo_wzr-hp-ag300h
 buffalo_wzr-hp-g302h-a1a0
 buffalo_wzr-hp-g450h
-comfast_cf-e110n-v2
-comfast_cf-e120a-v3
-comfast_cf-e5
 dlink_dir-825-b1
 dlink_dir-825-c1
 dlink_dir-835-a1
 dlink_dir-859-a1;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-elecom_wrc-1750ghbk2-i;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-elecom_wrc-300ghbk2-i
-embeddedwireless_dorin
-engenius_ecb1750;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-engenius_epg5000;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-engenius_ews511ap;-kmod-ath10k-ct -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
 glinet_gl-ar150
 glinet_gl-ar300m-lite
 glinet_gl-x750;-kmod-ath10k-ct -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
-iodata_etg3-r
-iodata_wn-ac1167dgr;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-iodata_wn-ac1600dgr;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-iodata_wn-ac1600dgr2;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-iodata_wn-ag300dgr
 joyit_jt-or750i;-kmod-ath10k-ct -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
-librerouter_librerouter-v1
-nec_wg1200cr;-kmod-ath10k-ct -ath10k-firmware-qca9888-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9888
-nec_wg800hp;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
 netgear_ex6400
 netgear_ex7300
 netgear_wndr3700
 netgear_wndr3700v2
 netgear_wndr3800
-ocedo_koala;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-ocedo_raccoon
-ocedo_ursus
 openmesh_om5p-ac-v2;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
-phicomm_k2t
-pisen_wmm003n
-pcs_cap324
-pcs_cr3000
-pcs_cr5000
-rosinson_wr818
 tplink_archer-a7-v5;-kmod-ath10k-ct -ath10k-firmware-qca988x-ct kmod-ath10k-smallbuffers ath10k-firmware-qca988x
 tplink_archer-c2-v3;-kmod-ath10k-ct-smallbuffers -ath10k-firmware-qca9887-ct kmod-ath10k-smallbuffers ath10k-firmware-qca9887
 tplink_archer-c25-v1;-kmod-ath10k-ct-smallbuffers kmod-ath10k-smallbuffers -ath10k-firmware-qca9887-ct ath10k-firmware-qca9887
