@@ -152,6 +152,9 @@ fi
 echo "src/gz weimarnetz $PACKAGES_URL/${MAINTARGET}_${CUSTOMTARGET}/weimarnetz_packages" >> $TEMP_DIR/ib/repositories.conf 
 echo "src/gz freifunk $PACKAGES_URL/${MAINTARGET}_${CUSTOMTARGET}/freifunk_packages" >> $TEMP_DIR/ib/repositories.conf 
 
+echo "src/gz weimarnetz $PACKAGES_URL/${MAINTARGET}_${CUSTOMTARGET}/weimarnetz_packages" >> ./EMBEDDED_FILES/etc/opkg/customfeeds.conf 
+echo "src/gz freifunk $PACKAGES_URL/${MAINTARGET}_${CUSTOMTARGET}/freifunk_packages" >> ./EMBEDDED_FILES/etc/opkg/customfeeds.conf 
+
 cp -r $TEMP_DIR/ib ./
 
 mkdir -p ./ib/keys
