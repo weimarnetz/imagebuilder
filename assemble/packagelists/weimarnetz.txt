@@ -2,8 +2,8 @@
 -ppp
 -ppp-mod-pppoe
 -wpad-mini
--wpad-mesh-mbedtls
-wpad-basic-mbedtls
+wpad-mesh-mbedtls
+-wpad-basic-mbedtls
 -wpad-basic-wolfssl
 -firewall
 -firewall4
