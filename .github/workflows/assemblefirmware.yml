@@ -23,7 +23,7 @@ jobs:
     strategy:
       matrix:
         target: [ath79_generic, mediatek_filogic, mpc85xx_p1010, ramips_mt7620, ramips_mt7621, ramips_mt76x8, x86_generic, x86_64, ipq40xx_generic]
-        openwrt: [22.03.7, 23.05.5, 24.10.0]
+        openwrt: [22.03.7, 23.05.5, 24.10.1]
         exclude: 
           - target: x86_64
             openwrt: 22.03.7
