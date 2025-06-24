@@ -58,3 +58,4 @@ The firmware assembly process consists of two main steps:
 Where:
 - `<target>` is the hardware target (e.g., ath79_generic)
 - `<openwrt_version>` is the OpenWrt version (e.g., 23.05.5) 
+
