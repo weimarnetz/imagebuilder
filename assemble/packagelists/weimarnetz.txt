@@ -57,3 +57,10 @@ weimarnetz-button-config
 tcpdump-mini
 iperf
 kmod-sched-cake
+
+# monitoring
+prometheus-node-exporter-ucode
+prometheus-node-exporter-ucode-wifi
+prometheus-node-exporter-ucode-openwrt
+prometheus-node-exporter-ucode-dnsmasq
+prometheus-node-exporter-ucode-netstat
