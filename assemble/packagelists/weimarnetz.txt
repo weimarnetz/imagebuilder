@@ -64,3 +64,4 @@ prometheus-node-exporter-ucode-wifi
 prometheus-node-exporter-ucode-openwrt
 prometheus-node-exporter-ucode-dnsmasq
 prometheus-node-exporter-ucode-netstat
+weimarnetz-metrics-exporter
