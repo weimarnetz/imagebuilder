@@ -23,7 +23,7 @@ jobs:
     strategy:
       matrix:
         target: [ath79_generic, mediatek_filogic, mpc85xx_p1010, ramips_mt7620, ramips_mt7621, ramips_mt76x8, x86_generic, x86_64, ipq40xx_generic, ipq40xx_mikrotik]
-        openwrt: [22.03.7, 23.05.5, 24.10.3]
+        openwrt: [22.03.7, 23.05.6, 24.10.4]
         exclude: 
           - target: x86_64
             openwrt: 22.03.7
@@ -32,11 +32,11 @@ jobs:
           - target: mediatek_filogic
             openwrt: 22.03.7
           - target: mediatek_filogic
-            openwrt: 23.05.5
+            openwrt: 23.05.6
           - target: ipq40xx_mikrotik 
             openwrt: 22.03.7
           - target: ipq40xx_mikrotik 
-            openwrt: 23.05.5
+            openwrt: 23.05.6
       fail-fast: false
     # The type of runner that the job will run on
     runs-on: ubuntu-24.04
